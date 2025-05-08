@@ -1,0 +1,166 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.profile-header, .section-title, footer {
+    background: #0b5b91;
+    color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    left: 20px;
+}
+
+.menu-btn {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: black;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-menu.open {
+    display: flex;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: #fff988;
+}
+
+main {
+    padding: 1rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.section-title {
+    margin-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.country {
+    text-align: center;
+}
+
+.caption {
+    text-align: center;
+    font-style: italic;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 3px solid rgb(150, 150, 150);
+}
+
+.filter-buttons button {
+    flex-grow: 1;
+    padding: 1rem 0;
+    margin: 0 0.5rem 1rem 0.5rem;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.filter-buttons button:hover {
+    background: #4c8bf5;
+}
+
+#course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.course-card {
+    padding: 1.5rem;
+    border-radius: 8px;
+    background: #ddd;
+    text-align: center;
+}
+
+.course-card.completed {
+    background: #a5d6a7;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Menu */
+@media (min-width: 768px) {
+    .menu-btn {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+}
