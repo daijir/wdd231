@@ -1,0 +1,285 @@
+/* Mobile First Styles */
+
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #2196F3;
+    --background-color: #F4F4F4;
+    --text-color: #333333;
+    --heading-font: 'Roboto', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: var(--body-font), sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font), sans-serif;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: var(--primary-color); /* ヘッダーの背景を白に */
+    padding: 1em 20px;
+    display: flex;
+    padding: 1em 1em;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    gap: 0.8rem;
+    position: relative;
+}
+
+.logo {
+    max-height: 40px; 
+    margin-right: 1em;
+}
+
+header h1 {
+    color: #fff; 
+    font-size: 1.1em;
+    margin: 0;
+}
+
+header h1 span {
+    display: block;
+    font-size: 0.7em;
+    color: #fff;
+}
+
+header nav {
+  margin-left: auto;
+}
+
+.menuLinks {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 120px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.12);
+}
+
+.menuLinks.open {
+  display: flex;
+}
+
+.menuLinks li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 1em 1.2em;
+  display: block;
+}
+
+.menuLinks li a.active,
+.menuLinks li a:hover {
+  text-decoration: underline;
+}
+
+#myButton {
+  display: block;
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: #fff;
+  margin-left: 0.7em;
+  cursor: pointer;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+}
+
+.placeholder-box {
+    background-color: #fff;
+    height: 100px;
+}
+
+.info-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 1em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.info-card img {
+    width: 175px;
+    height: auto;
+}
+
+.info-card ul, p  {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding: 1em;
+}
+
+.section-title {
+    color: #fff;
+    border-bottom: 2px solid #ccc;
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 0.5em;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.weather-info {
+  display: flex;
+  align-items: center;   
+  gap: 1em;           
+}
+
+.weather-info img {
+  width: 175px;           
+  height: auto;
+  flex-shrink: 0;
+}
+
+.weather-info ul {
+  margin: 0;
+  padding-bottom: 2em;
+  list-style: none;
+  display: flex;
+  flex-direction: column; 
+  gap: 0.2em;         
+}
+
+#business-directory {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 10px;
+}
+
+.member-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin-bottom: 1em;;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+}
+
+.member-card strong {
+    font-size: 1em;
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    margin-bottom: 0.3em;
+}
+
+.member-card p {
+    font-size: 0.8em;
+    margin-bottom: 0.2em;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 0.7em;
+    border-top: 1px solid #ccc;
+}
+
+footer a {
+    color: var(--primary-color);
+}
+
+@media (min-width: 768px) {
+    
+    header {
+    flex-direction: row;
+    }
+
+    header nav {
+        position: static;
+        margin-left: auto;
+    }
+
+    .menuLinks {
+        display: flex !important; /* 常に表示 */
+        flex-direction: row;
+        position: static;
+        background: none;
+        box-shadow: none;
+        min-width: 0;
+        gap: 1.3em;
+    }
+    
+    .menuLinks li a {
+        padding: 0.3em 0.5em;
+    }
+
+    #myButton {
+        display: none;
+    }
+
+    .logo {
+        max-height: 60px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+
+    main {
+        flex-direction: column; 
+    }
+
+    .info-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin-bottom: 2em;
+    }
+
+    .info-card {
+        flex: 1; /* それぞれのカードが同じ比率で広がる */
+    }
+
+    .section-title {
+        text-align: left;
+    }
+
+    #business-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin-bottom: 2em;
+    }
+
+    footer {
+        grid-column: 1 / -1;
+        text-align: left;
+        padding-left: 20px;
+    }
+}

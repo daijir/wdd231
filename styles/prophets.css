@@ -1,0 +1,108 @@
+/* 基本のスタイル (モバイルファースト) */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #5c5eb8;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 1rem;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 最小幅300pxで自動配置 */
+  gap: 1rem;
+}
+
+section {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  color: #337ab7;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%; 
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  font-size: 0.8em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+@media (min-width: 600px) {
+  header {
+    padding: 2rem;
+  }
+
+  main {
+    padding: 2rem;
+  }
+
+  #cards {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* 少し広めに */
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  img {
+    border-width: 2px;
+  }
+
+  footer {
+    font-size: 1em;
+    position: static;
+  }
+}
+
+@media (min-width: 900px) {
+  header {
+    font-size: 2em;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto; 
+  }
+
+  #cards {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* 必要に応じて調整 */
+  }
+
+  section {
+    padding: 2rem;
+  }
+}

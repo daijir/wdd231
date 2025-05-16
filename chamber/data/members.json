@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Yorii Auto Parts Co., Ltd.",
+    "email": "info@yorii-autoparts.co.jp",
+    "phoneNumber": "048-581-XXXX",
+    "address": "123 Chuo, Yorii-machi, Saitama",
+    "membershipLevel": 3
+  },
+  {
+    "name": "Sato's Local Diner",
+    "email": "sato@satosdiner.com",
+    "phoneNumber": "048-582-YYYY",
+    "address": "456 Honmachi, Yorii-machi, Saitama",
+    "membershipLevel": 1
+  },
+  {
+    "name": "Yorii Electronics Corp.",
+    "email": "contact@yorii-electronics.com",
+    "phoneNumber": "048-583-ZZZZ",
+    "address": "789 Kamiyada, Yorii-machi, Saitama",
+    "membershipLevel": 2
+  },
+  {
+    "name": "Tanaka Flower Shop",
+    "email": "info@tanaka-flowers.com",
+    "phoneNumber": "048-584-AAAA",
+    "address": "1010 Oaza, Yorii-machi, Saitama",
+    "membershipLevel": 1
+  },
+  {
+    "name": "Yorii Brewery",
+    "email": "info@yoriibrewery.jp",
+    "phoneNumber": "048-585-BBBB",
+    "address": "1111 Sakagura, Yorii-machi, Saitama",
+    "membershipLevel": 3
+  },
+  {
+    "name": "Matsumoto Machining",
+    "email": "sales@matsumoto-machining.com",
+    "phoneNumber": "048-586-CCCC",
+    "address": "1212 Kashiwagi, Yorii-machi, Saitama",
+    "membershipLevel": 2
+  },
+  {
+    "name": "Yorii Green Farm",
+    "email": "info@yoriifarm.com",
+    "phoneNumber": "048-587-DDDD",
+    "address": "1313 Nodaira, Yorii-machi, Saitama",
+    "membershipLevel": 1
+  }
+]
