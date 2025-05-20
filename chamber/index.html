@@ -8,7 +8,7 @@
     <meta name="author" content="Daijiro Sagane">
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/style.css">
     <meta property="og:title" content="Yorii Town Chamber of Commerce - Business Directory">
     <meta property="og:description" content="A directory of member businesses of the Yorii Town Chamber of Commerce.">
     <meta property="og:image" content="images/logo.png">
@@ -23,8 +23,8 @@
   <h1>Yorii Town<br><span>Chamber of Commerce</span></h1>
   <nav>
     <ul class="menuLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="directory.html" class="active">Directory</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
       <li><a href="join.html">Join</a></li>
       <li><a href="discover.html">Discover</a></li>
     </ul>
@@ -46,23 +46,23 @@
       <section class="info-card">
         <h3 class="section-title">Current Weather</h3>
         <div class="weather-info">
-          <img src="images/weather-icon.svg" alt="weather">
+          <img id="weather-icon" src="" alt="">
           <ul>
-            <li>75°F</li>
-            <li>High: 85°</li>
-            <li>Low: 52°</li>
-            <li>Humidity: 34%</li>
-            <li>Sunrise: 7:30am</li>
-            <li>Sunset: 9:59pm</li>
+            <li id="current-temp"></li>
+            <li id="high-temp"></li>
+            <li id="low-temp"></li>
+            <li id="humidity"></li>
+            <li id="sunrise"></li>
+            <li id="sunset"></li>
           </ul>
         </div>
       </section>
 
-      <section class="info-card">
+      <section class="info-card" id="weather-forecast">
         <h3 class="section-title">Weather Forecast</h3>
-        <p>Today: <strong>90°F</strong></p>
-        <p>Wednesday: <strong>89°F</strong></p>
-        <p>Thursday: <strong>68°F</strong></p>
+        <p id="forecast-today"></p>
+        <p id="forecast-tomorrow"></p>
+        <p id="forecast-dayafter"></p>
       </section>
     </div>
 
@@ -74,6 +74,6 @@
         <p>&copy; <span id="currentyear"></span> Yorii Town Chamber of Commerce</p>
         <p>Your Full Name | WDD 231 |<span id="lastModified"></span></p>
     </footer>
-    <script src="scripts/directory.js"></script>
+    <script type="module" src="scripts/index.mjs"></script>
 </body>
 </html>
