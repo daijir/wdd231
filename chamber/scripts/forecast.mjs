@@ -6,14 +6,14 @@ const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=36.11912337775
         const data = await response.json();
         console.log(data); 
 
-        // 今日・明日・明後日の日付取得
+        // get the date of today, tomorrow, and the day after
         const today = new Date();
         const tomorrow = new Date(today);
         tomorrow.setDate(today.getDate() + 1);
         const dayafter = new Date(today);
         dayafter.setDate(today.getDate() + 2);
 
-        // 日付ごとに最高気温を抽出
+        // get the max temprature for today, tomorrow, and the day after
         function getMaxTempForDate(date) {
         const y = date.getFullYear();
         const m = String(date.getMonth() + 1).padStart(2, '0');
