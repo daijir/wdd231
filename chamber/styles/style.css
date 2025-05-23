@@ -1,11 +1,11 @@
 /* Mobile First Styles */
 
 :root {
-    --primary-color: #4CAF50;
-    --secondary-color: #2196F3;
-    --background-color: #F4F4F4;
+    --primary-color: #234a2f;
+    --secondary-color: #1a237e;
+    --background-color: #fdf0c2;
     --text-color: #333333;
-    --heading-font: 'Roboto', sans-serif;
+    --heading-font: 'Roboto', 'Arial' sans-serif;
     --body-font: 'Open Sans', sans-serif;
 }
 
@@ -108,11 +108,24 @@ header nav {
   cursor: pointer;
 }
 
+.hero-image {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
 main {
     padding: 20px;
     display: flex;
     flex-direction: column; 
     gap: 20px;
+}
+
+.section-title {
+  min-height: 50px;
+}
+.weather-forecast .info-card {
+  min-height: 100px;
 }
 
 .placeholder-box {
@@ -127,16 +140,11 @@ main {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.info-card img {
-    width: 175px;
-    height: auto;
-}
-
 .info-card ul, p  {
     list-style: none;
     padding: 0;
     margin: 0;
-    padding: 1em;
+    padding-top: 0.5em;
 }
 
 .section-title {
@@ -156,9 +164,10 @@ main {
 }
 
 .weather-info img {
-  width: 175px;           
-  height: auto;
-  flex-shrink: 0;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 100px;
+  height: 100px;
 }
 
 .weather-info ul {
@@ -168,6 +177,11 @@ main {
   display: flex;
   flex-direction: column; 
   gap: 0.2em;         
+}
+
+#weather-forecast p {
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 #business-directory {
@@ -185,19 +199,23 @@ main {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column; 
-    align-items: flex-start; 
+    align-items: center; 
+}
+
+.member-logo img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
 }
 
 .member-card strong {
-    font-size: 1em;
-    color: var(--secondary-color);
+    color: var(--secondary-color); 
+    background-color: #fff;
     border-bottom: 2px solid var(--secondary-color);
     margin-bottom: 0.3em;
-}
-
-.member-card p {
-    font-size: 0.8em;
-    margin-bottom: 0.2em;
+    font-size: 1.5em;
+    padding: 0.1em 0.2em;
+    border-radius: 2px;
 }
 
 footer {
@@ -225,7 +243,7 @@ footer a {
     }
 
     .menuLinks {
-        display: flex !important; /* 常に表示 */
+        display: flex !important;
         flex-direction: row;
         position: static;
         background: none;
@@ -250,6 +268,11 @@ footer a {
         font-size: 1.8em;
     }
 
+    .hero-image {
+        display: block;
+        margin-bottom: 2em;
+    }
+
 
     main {
         flex-direction: column; 
@@ -263,11 +286,11 @@ footer a {
     }
 
     .info-card {
-        flex: 1; /* それぞれのカードが同じ比率で広がる */
+        flex: 1; 
     }
 
     .section-title {
-        text-align: left;
+        text-align: center;
     }
 
     #business-cards {

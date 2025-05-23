@@ -4,48 +4,62 @@
     "email": "info@yorii-autoparts.co.jp",
     "phoneNumber": "048-581-XXXX",
     "address": "123 Chuo, Yorii-machi, Saitama",
-    "membershipLevel": 3
+    "image": "images/auto-parts.webp",
+    "membershipLevel": 3,
+    "description": "A local company engaged in the manufacturing and sales of auto parts. Provides high-quality parts."
   },
   {
     "name": "Sato's Local Diner",
     "email": "sato@satosdiner.com",
     "phoneNumber": "048-582-YYYY",
     "address": "456 Honmachi, Yorii-machi, Saitama",
-    "membershipLevel": 1
+    "image": "images/diner.webp",
+    "membershipLevel": 1,
+    "description": "A popular diner with a homely atmosphere. Proud of dishes made with local ingredients."
   },
   {
     "name": "Yorii Electronics Corp.",
     "email": "contact@yorii-electronics.com",
     "phoneNumber": "048-583-ZZZZ",
     "address": "789 Kamiyada, Yorii-machi, Saitama",
-    "membershipLevel": 2
+    "image": "images/electronics.webp",
+    "membershipLevel": 2,
+    "description": "A company engaged in the development and sales of electronic devices. Provides the latest technology to the community."
   },
   {
     "name": "Tanaka Flower Shop",
     "email": "info@tanaka-flowers.com",
     "phoneNumber": "048-584-AAAA",
     "address": "1010 Oaza, Yorii-machi, Saitama",
-    "membershipLevel": 1
+    "image": "images/flower.webp",
+    "membershipLevel": 1,
+    "description": "A flower shop with a wide variety of seasonal flowers and gift arrangements."
   },
   {
-    "name": "Yorii Brewery",
+    "name": "Yorii Sake Brewery",
     "email": "info@yoriibrewery.jp",
     "phoneNumber": "048-585-BBBB",
     "address": "1111 Sakagura, Yorii-machi, Saitama",
-    "membershipLevel": 3
+    "image": "images/sake.webp",
+    "membershipLevel": 3,
+    "description": "A long-established sake brewery making local sake using traditional methods. Tours are also available."
   },
   {
     "name": "Matsumoto Machining",
     "email": "sales@matsumoto-machining.com",
     "phoneNumber": "048-586-CCCC",
     "address": "1212 Kashiwagi, Yorii-machi, Saitama",
-    "membershipLevel": 2
+    "image": "images/machining.webp",
+    "membershipLevel": 2,
+    "description": "A local factory specializing in precision machining. Supports small-lot, multi-variety production."
   },
   {
-    "name": "Yorii Green Farm",
+    "name": "Yorii Rice Farm",
     "email": "info@yoriifarm.com",
     "phoneNumber": "048-587-DDDD",
     "address": "1313 Nodaira, Yorii-machi, Saitama",
-    "membershipLevel": 1
+    "image": "images/rice.webp",
+    "membershipLevel": 1,
+    "description": "Produces and sells delicious local rice. Direct sales available."
   }
 ]

@@ -1,6 +1,6 @@
-import { setYearAndLastModified } from "./YearModifcation.mjs";
-import { setupHamburgerMenu } from "./Hamburger.mjs";
-import { getMembers, createBusinessCard, displayMembers } from "./BusinessCard.mjs";
+import { setYearAndLastModified } from "./yearModifcation.mjs";
+import { setupHamburgerMenu } from "./hamburger.mjs";
+import { getMembers, createBusinessCard, displayMembers } from "./businessCard.mjs";
 
 
 document.addEventListener("DOMContentLoaded", async () => {
