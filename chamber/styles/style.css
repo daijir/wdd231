@@ -202,10 +202,17 @@ main {
     align-items: center; 
 }
 
-.member-logo img {
+.member-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    max-width: 350px;
-    height: auto;
+}
+
+.member-details strong {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .member-card strong {
