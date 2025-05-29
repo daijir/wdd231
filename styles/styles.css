@@ -147,6 +147,69 @@ ul {
     font-weight: bold;
 }
 
+#course-details {
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+  width: 500px;
+  max-width: 95vw;
+  font-family: 'Roboto', Arial, sans-serif;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.25);
+  background: #fff;
+  color: #222;
+}
+
+#course-details .dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #275690;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+#dialog-code {
+  font-weight: bold;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+
+#close-button {
+  background: none;
+  border: none;
+  color: #ff4c4c;
+  background-color: #ddd;
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+#course-details h2 {
+  margin: 20px 20px 10px 20px;
+  font-size: 1.3em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#course-details p {
+  margin: 10px 20px;
+  color: #333;
+  font-size: 1.05em;
+}
+
+#course-details p:first-of-type {
+  margin-top: 0;
+}
+
+#course-details p strong {
+  font-weight: bold;
+}
+
+::backdrop {
+  background: rgba(0,0,0,0.4);
+}
+
 footer {
     text-align: center;
     padding: 1rem;
