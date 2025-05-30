@@ -50,7 +50,7 @@
         <label>Mobile Phone Number  <input type="tel" name="telephone" required autocomplete="tel" title="Mobile Phone Number"></label>
         <label>Business/Organization's Name <input type="text" name="organization" required autocomplete="organization" title="Business/Organization's Name"></label>
         <label>Select Your Membersip Level 
-            <select name="membership" id="membership" required autocomplete="membership">
+            <select name="membership" id="membership" required>
                 <option value="" disabled selected>Select Membership Level</option>
                 <option value="nonprofit">Non-Profit Membership</option>
                 <option value="bronze">Bronze Membership</option>
@@ -59,29 +59,29 @@
             </select>
         </label>
         <label>Description of Your Business/Organization 
-            <textarea name="description" id="description" autocomplete="organization-description" title="Description of Your Business/Organization" placeholder="Enter a brief description about your business/organization" rows="4" cols="50" required></textarea>
+            <textarea name="description" id="description" title="Description of Your Business/Organization" placeholder="Enter a brief description about your business/organization" rows="4" cols="50" required></textarea>
         </label>
         <input type="hidden" id="timestamp" name="timestamp">
         <input type="submit" id="submitButton" value="Join">
-      </form>
-      <div class="membership-cards">
-        <section>
-            <h2>NP Membership</h2>
-            <div>Learn More...</div>
-        </section>
-        <section class="membership-card">
-            <h2>Bronze Membership</h2>
-            <div>Learn More...</div>
-        </section>
-        <section class="membership-card">
-            <h2>Silver Membership</h2>
-            <div>Learn More...</div>
-        </section>
-        <section class="membership-card">
-            <h2>Gold Membership</h2>
-            <div>Learn More...</div>
-        </section>
-      </div>
+        </form>
+        <div class="membership-cards">
+          <section>
+              <h2>NP Membership</h2>
+              <div>Learn More...</div>
+          </section>
+          <section class="membership-card">
+              <h2>Bronze Membership</h2>
+              <div>Learn More...</div>
+          </section>
+          <section class="membership-card">
+              <h2>Silver Membership</h2>
+              <div>Learn More...</div>
+          </section>
+          <section class="membership-card">
+              <h2>Gold Membership</h2>
+              <div>Learn More...</div>
+          </section>
+        </div>
     </div>
     
     <dialog id="mydialog">
