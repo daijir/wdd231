@@ -34,8 +34,11 @@ a:hover {
     text-decoration: underline;
 }
 
+
+
+/* Header */
 header {
-    background-color: var(--primary-color); /* ヘッダーの背景を白に */
+    background-color: var(--primary-color);
     padding: 1em 20px;
     display: flex;
     padding: 1em 1em;
@@ -67,6 +70,8 @@ header nav {
   margin-left: auto;
 }
 
+
+/* Hamburger Menu */
 .menuLinks {
   display: none;
   flex-direction: column;
@@ -74,15 +79,28 @@ header nav {
   margin: 0;
   padding: 0;
   background: var(--primary-color);
+  border-bottom-left-radius: 10px;
   position: absolute;
   top: 100%;
   right: 0;
   min-width: 120px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.12);
+  z-index: 1000;
 }
 
 .menuLinks.open {
   display: flex;
+}
+
+.menu-overlay {
+  display: none;
+  position: fixed;
+  z-index: 900;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.3);
+}
+.menuLinks.open ~ .menu-overlay {
+  display: block;
 }
 
 .menuLinks li a {
@@ -108,6 +126,9 @@ header nav {
   cursor: pointer;
 }
 
+
+
+/* Hero Section (Home Page)*/
 .hero-container {
     position: relative;
     width: 100%;
@@ -116,8 +137,9 @@ header nav {
 
 .hero-image {
     display: block;
-    width: 100%;
+    width: 70%;
     height: auto;
+    margin: 0 auto;
 }
 
 .cta-button {
@@ -142,13 +164,24 @@ header nav {
     color: #fff;
 }
 
+
+
+/* Main Content */
 main {
-    padding: 20px;
     display: flex;
     flex-direction: column; 
     gap: 20px;
+    padding: 20px;
 }
 
+h1 {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: #fff;
+    margin-bottom: 1em;
+}
+
+/* Info Cards */
 .section-title {
   min-height: 50px;
 }
@@ -185,6 +218,8 @@ main {
     margin-bottom: 1em;
 }
 
+
+/* Weather Forecast */
 .weather-info {
   display: flex;
   align-items: center;   
@@ -212,6 +247,9 @@ main {
     margin-bottom: 20px;
 }
 
+
+
+/* Business Directory */
 #business-directory {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
@@ -259,6 +297,203 @@ main {
     align-self: flex-start;
 }
 
+
+
+/* Form (Join page) */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgb(227, 227, 227);
+    border-radius: 10px;
+    border: 5px solid var(--primary-color);
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin: 1rem 2rem 0.2rem 1.5rem;
+}
+
+form input,
+form textarea,
+form select {
+    display: block;
+    width: 100%;
+    padding: 0.2rem;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid var(--primary-color);
+    transition: background 0.2s;
+}
+
+form input:hover,
+form textarea:hover,
+form select:hover {
+    border-color: var(--secondary-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+}
+
+form input[type="submit"] {
+    background-color: var(--primary-color);
+    width: auto;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    margin: 1rem 2rem 1rem 1.5rem;
+    border: none;
+    transition: background 0.2s;
+}
+
+form input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}
+
+form input[type="submit"]:hover form {
+    background-color: #fff;
+}
+
+
+/* Membership Card */
+.membership-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 10px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.membership-cards section {
+    background-color: rgb(227, 227, 227);
+    border: 2px solid var(--secondary-color);
+    padding: 1em;
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 128px;
+    border-bottom-left-radius: 128px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    /* animation */
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.4,0,0.2,1);
+}
+
+.membership-cards section.visible {
+    /* animation */
+    opacity: 1;
+    transform: translate(0);
+}
+
+.membership-cards section:hover {
+    background-color: #fff;
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.membership-cards section h2 {
+    color: var(--secondary-color);
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.membership-cards section:hover h2 {
+    color: var(--primary-color);
+}
+
+.membership-cards section div {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5em 2em;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    color: #fff;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.membership-cards section:hover div {
+    background-color: var(--primary-color);
+}
+
+
+
+/* dialog */
+
+#mydialog {
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 0;
+    width: 600px;
+    max-width: 95vw;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.25);
+}
+
+#mydialog div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0 20px;
+}
+
+
+#mydialog div h2 {
+    text-align: center;
+    flex: 1;
+}
+
+#mydialog div button {
+    background: none;
+    color: red;
+    background-color: #ddd;
+    border-radius: 6px;
+}
+
+#mydialog p {
+    padding: 1em;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+
+
+/* confirmation-list */
+#confirmation {
+    border: 3px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 1em;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgb(227, 227, 227);
+}
+
+#confirmation h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1em;
+}
+
+.confirmation-list {
+    list-style: none;
+    padding: 0;
+    margin: 2rem auto;
+}
+
+.confirmation-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3em;
+}
+
+
+
+/* Footer */
 footer {
     background-color: var(--primary-color);
     color: #fff;
@@ -344,6 +579,24 @@ footer a {
         grid-template-columns: repeat(3, 1fr);
         gap: 16px;
         margin-bottom: 2em;
+    }
+
+    /* Form and Membership Card */
+    .form-membership-container {
+        display: flex;
+        gap: 2em;
+        align-items: flex-start;
+        margin: 0 auto;
+        width: fit-content;
+    }
+
+     form {
+        flex: 1 1 450px;
+        max-width: 500px;
+    }
+    .membership-cards {
+        flex: 1 1 450px;
+        max-width: 500px;
     }
 
     footer {

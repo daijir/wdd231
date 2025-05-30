@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     const courseDetails = document.getElementById("course-details");
-    const closeButton = document.getElementById("close-button");
     const courseDetailsText = document.querySelector("#course-details div");
 
     // Course data
