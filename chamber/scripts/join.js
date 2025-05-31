@@ -12,11 +12,35 @@ document.addEventListener("DOMContentLoaded", async () => {
     const description = document.querySelector('#mydialog p');
 
     const memberships = [
-        { title: 'NP Membership', description: 'description for NP' },
-        { title: 'Bronze Membership', description: 'description for Bronze' },
-        { title: 'Silver Membership', description: 'description for Silver' },
-        { title: 'Gold Membership', description: 'description for Gold' }
-    ];
+    {
+        title: 'NP Membership',
+        benefit1: 'No fee (for non-profit organizations)',
+        benefit2: 'Access to community events',
+        benefit3: 'Basic training sessions',
+        benefit4: 'Networking opportunities'
+    },
+    {
+        title: 'Bronze Membership',
+        benefit1: 'All NP Membership benefits',
+        benefit2: 'Discounted event tickets',
+        benefit3: 'Access to member-only workshops',
+        benefit4: 'Business listing in our directory'
+    },
+    {
+        title: 'Silver Membership',
+        benefit1: 'All Bronze Membership benefits',
+        benefit2: 'Spotlight advertising on the home page',
+        benefit3: 'Priority event registration',
+        benefit4: 'Free training sessions'
+    },
+    {
+        title: 'Gold Membership',
+        benefit1: 'All Silver Membership benefits',
+        benefit2: 'Exclusive invitations to special events',
+        benefit3: 'Premium advertising',
+        benefit4: 'Personalized business support'
+    }
+];
 
     myclose.addEventListener('click', () => {
         mydialog.close();
@@ -32,7 +56,18 @@ document.addEventListener("DOMContentLoaded", async () => {
         // console.log(membership.title);
 
         mytitle.textContent = membership ? membership.title : 'No title available';
-        description.textContent = membership ? membership.description : 'No description available';
+        if (membership) {
+            description.innerHTML = `
+                <ul>
+                    <li>${membership.benefit1}</li>
+                    <li>${membership.benefit2}</li>
+                    <li>${membership.benefit3}</li>
+                    <li>${membership.benefit4}</li>
+                </ul>
+            `;
+        } else {
+            description.textContent = 'No description available';
+        }
     });
     })
 
