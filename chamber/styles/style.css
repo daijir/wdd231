@@ -137,7 +137,7 @@ header nav {
 
 .hero-image {
     display: block;
-    width: 70%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
 }
@@ -540,6 +540,9 @@ footer a {
         max-height: 60px;
     }
 
+    .hero-image {
+        width: 70%;
+    }
 
     .cta-button {
         top: 90%;
