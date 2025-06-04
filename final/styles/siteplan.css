@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400&display=swap');
+
+:root {
+    --primary-color: #FF8C00;
+    --secondary-color: #FFD700;
+    --background-color: #F8F8F8;
+    --text-color: #333333;
+    --light-text-color: #555555; 
+    --border-color: #E0E0E0;
+    --section-bg-color: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--light-text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+header {
+    background-color: var(--primary-color); 
+    color: var(--section-bg-color); 
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px var(--shadow-color);
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    color: inherit; 
+    margin: 0;
+    padding: 0; 
+    border-bottom: none; 
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--text-color); 
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 5px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: var(--light-text-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+strong {
+    color: var(--primary-color); 
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.section-content {
+    background-color: var(--section-bg-color); 
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--shadow-color); 
+    margin-bottom: 30px;
+    border: 1px solid var(--border-color); 
+}
+
+.section-content img {
+    max-width: 100%; 
+    height: auto;    
+    display: block; 
+    margin: 20px auto; 
+    border: 1px solid var(--border-color); 
+    border-radius: 4px;
+}
