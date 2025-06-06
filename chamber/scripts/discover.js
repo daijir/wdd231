@@ -56,13 +56,13 @@ document.addEventListener("DOMContentLoaded", async () => {
             } else {
                 message = `You last visited ${daysDifference} days ago.`
             }
-            
-            console.log('Branch: Subsequent Visit');
-            console.log(messageDiv);
-            messageDiv.textContent = message;
-            console.log('Final messageDiv content:', messageDiv.textContent);
-            localStorage.setItem('lastVisitDate', now.toString());
         }
+
+        console.log('Branch: Subsequent Visit');
+        console.log(messageDiv);
+        messageDiv.textContent = message;
+        console.log('Final messageDiv content:', messageDiv.textContent);
+        localStorage.setItem('lastVisitDate', now.toString());
     };
 
     displayLastVisitMessage();
