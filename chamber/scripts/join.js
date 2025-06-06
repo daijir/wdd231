@@ -52,11 +52,12 @@ document.addEventListener("DOMContentLoaded", async () => {
         mydialog.showModal();
         const cardTitle = section.querySelector('h2').textContent;
         // console.log(cardTitle);
-        const membership = memberships.find(memberships => memberships.title === cardTitle);
+        const membership = memberships.find(membership => membership.title === cardTitle);
         // console.log(membership.title);
 
         mytitle.textContent = membership ? membership.title : 'No title available';
         if (membership) {
+            // console.log(membership.benefit1);
             description.innerHTML = `
                 <ul>
                     <li>${membership.benefit1}</li>

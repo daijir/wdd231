@@ -423,7 +423,6 @@ form input[type="submit"]:hover form {
 
 
 /* dialog */
-
 #mydialog {
     border: 2px solid var(--primary-color);
     border-radius: 10px;
@@ -441,7 +440,6 @@ form input[type="submit"]:hover form {
     color: #fff;
     padding: 0 20px;
 }
-
 
 #mydialog div h2 {
     text-align: center;
@@ -491,6 +489,105 @@ form input[type="submit"]:hover form {
     padding: 0.3em;
 }
 
+
+
+/* Discover Grid */
+#show-places {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 5px;
+}
+
+.place-card {
+    display: grid;
+    grid-template-areas:
+            "image"
+            "name"
+            "address"
+            "cost"
+            "description";   
+    grid-template-rows:
+            auto
+            auto 
+            auto 
+            auto 
+            1fr;
+    gap: 5px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 0 5px;
+}
+
+.place-figure {
+    grid-area: image;
+    margin-top: 10px;
+}
+
+.place-figure img {
+    border-radius: 8px;
+    width: 180px;
+}
+
+.place-card h2 {
+    grid-area: name;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+.place-card address {
+    grid-area: address;
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+}
+
+.place-cost {
+    grid-area: cost;
+    font-size: 0.8rem;
+}
+
+.place-description {
+    grid-area: description;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    #show-places {
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    }
+
+    .place-card {
+        grid-template-areas: 
+            "image name"
+            "image description"
+            "image cost"
+            "image address";
+    }
+
+    .place-figure img {
+        width: 300px;
+    }
+}
+
+@media (min-width: 1025px) {
+    #show-places {
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    }
+
+    .place-card {
+        grid-template-areas: 
+            "image name"
+            "image description"
+            "image cost"
+            "image address";
+    }
+
+    .place-figure img {
+        width: 300px;
+    }
+}
 
 
 /* Footer */

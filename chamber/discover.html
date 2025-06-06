@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yorii Town Chamber of Commerce - Discovery</title>
+    <meta name="description" content="A directory of member businesses of the Yorii Town Chamber of Commerce.">
+    <meta name="author" content="Daijiro Sagane">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" onload="this.rel='stylesheet'">
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    </noscript>
+    <link rel="stylesheet" href="styles/normalize.css" media="print" onload="this.media='all'">
+    <noscript>
+      <link rel="stylesheet" href="styles/normalize.css">
+    </noscript>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta property="og:title" content="Yorii Town Chamber of Commerce - Discovery">
+    <meta property="og:description" content="A directory of member businesses of the Yorii Town Chamber of Commerce.">
+    <meta property="og:image" content="https://s.yimg.jp/images/hometown/images/common/localgovernment/lglogo/11/11408.png">
+    <meta property="og:url" content="https://daijir.github.io/wdd231/chamber/discovery.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+  <header>
+  <img src="images/logo.webp" alt="Yorii Logo" class="logo" />
+  <h1>Yorii Town<br><span>Chamber of Commerce</span></h1>
+  <nav>
+    <ul class="menuLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="discover.html" class="active">Discover</a></li>
+    </ul>
+    <div class="menu-overlay"></div>
+  </nav>
+    <button id="myButton">&#9776;</button>
+  </header>
+
+  <main>
+
+    <h1>Discovery</h1>
+
+    <div id="message"></div>
+
+    <div id="show-places"></div>
+
+  </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Yorii Town Chamber of Commerce</p>
+        <p>Daijiro Sagane | WDD 231 |<span id="lastModified"></span></p>
+    </footer>
+    <script type="module" src="scripts/discover.js" defer></script>
+</body>
+</html>
