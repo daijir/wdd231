@@ -569,6 +569,11 @@ form input[type="submit"]:hover form {
     .place-figure img {
         width: 300px;
     }
+
+    .place-figure img:hover {
+        opacity: .5;
+        box-shadow: 0 0 20px #333;
+    }
 }
 
 @media (min-width: 1025px) {
@@ -586,6 +591,11 @@ form input[type="submit"]:hover form {
 
     .place-figure img {
         width: 300px;
+    }
+
+    .place-figure img:hover {
+        filter: blur(1px) grayscale(30%);
+        box-shadow: 0 0 20px #333;
     }
 }
 
