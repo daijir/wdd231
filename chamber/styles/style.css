@@ -527,7 +527,10 @@ form input[type="submit"]:hover form {
 
 .place-figure img {
     border-radius: 8px;
-    width: 180px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
 }
 
 .place-card h2 {
@@ -566,6 +569,13 @@ form input[type="submit"]:hover form {
             "image address";
     }
 
+    .place-figure {
+        grid-area: image;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
     .place-figure img {
         width: 300px;
     }
@@ -588,6 +598,14 @@ form input[type="submit"]:hover form {
             "image cost"
             "image address";
     }
+
+    .place-figure {
+        grid-area: image;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
 
     .place-figure img {
         width: 300px;
