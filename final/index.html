@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamafuji</title>
+    <meta name="description" content="A homepage of Hamafuji">
+    <meta name="author" content="Daijiro Sagane">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" onload="this.rel='stylesheet'">
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    </noscript>
+    <link rel="stylesheet" href="styles/normalize.css" media="print" onload="this.media='all'">
+    <noscript>
+      <link rel="stylesheet" href="styles/normalize.css">
+    </noscript>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta property="og:title" content="Yorii Town Chamber of Commerce - Business Directory">
+    <meta property="og:description" content="A directory of member businesses of the Yorii Town Chamber of Commerce.">
+    <meta property="og:image" content="https://s.yimg.jp/images/hometown/images/common/localgovernment/lglogo/11/11408.png">
+    <meta property="og:url" content="https://daijir.github.io/wdd231/final/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/favicon.webp" alt="Hamafuji Logo" width="100">
+        </div>
+        <div class="nav-wrapper">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#location">Store Information</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#reservation">Reservation</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="header-info">
+            <p class="phone">Phone: 0276-58-0412</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/hero-image.webp" alt="hero image">
+            <div class="hero-content">
+                <h1>Serving authentic Chinese cuisine with energy today!</h1>
+                <p class="catch-phrase">Please enjoy our signature ramen with special soup and homemade noodles, and addictive Taiwanese mazesoba.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="button primary">View Menu</a>
+                    <a href="#location" class="button primary">Store Information</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section" id="menu">
+            <h2>Menu</h2>
+            <div class="menu-tabs">
+                <button class="menu-tab" data-tab="lunch">Lunch</button>
+                <button class="menu-tab active" data-tab="dinner">Dinner</button>
+            </div>
+            <div class="menu-contents">
+                <div id="dinner-menu" class="menu-content active"></div>
+                <div id="lunch-menu" class="menu-content"></div>
+            </div>
+        </section>
+
+        <section class="location-section" id="location">
+            <h2>Store Information</h2>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.6891920732214!2d139.3709019!3d36.2962761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601f21a1b97f1f3b%3A0xbef1502f6b1ec39d!2sHamafuji!5e1!3m2!1sen!2sjp!4v1747022593137!5m2!1sen!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="location-details">
+                <p>Address: 22-38 Honmachi, Ota City, Gunma Prefecture 373-0057</p>
+                <p>Business Hours: 11:30 AM - 3:00 PM / 6:00 PM - 9:00 PM</p>
+                <p>Regular Holidays: Open all year round</p>
+                <p>※For temporary closures, please check our <a href="https://www.instagram.com/hama_fuji_/">official Instagram</a>.</p>
+                <p>Phone: 0276-58-0412</p>
+            </div>
+        </section>
+
+        <section class="news-section" id="news">
+            <h2>News</h2>
+            <ul class="news-list">
+                <li>March 19, 2025 <a href="#">Limited Time Offer! Mapo Ramen Now Available</a></li>
+                <li>March 4, 2025 <a href="#">Morning Ramen Announcement</a></li>
+            </ul>
+        </section>
+
+        <section class="reservation-section" id="reservation">
+            <h2>Reservation</h2>
+            <p>Reservations can be made by phone (<a href="tel:0276580412">0276-58-0412</a>) or via this <a href="#">URL</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Hamafuji</p>
+            <nav>
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>Terms of Service</li>
+                </ul>
+            </nav>
+            <!-- <div class="social-links">
+                <a href="https://www.instagram.com/hama_fuji_/" target="_blank"><img src="images/instagram.jpg" alt="Instagram"></a>
+                <a href="https://x.com/hama_fuji_/" target="_blank"><img src="images/x.png" alt="X"></a>
+            </div> -->
+        </div>
+    </footer>
+
+    <script type="module" src="scripts/script.js"></script>
+</body>
+</html>
