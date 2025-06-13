@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function fetchAndRenderAllMenu() {
         try {
-            const response = await fetch('../data/menu.json');
+            const response = await fetch('https://daijir.github.io/wdd231/final/data/menu.json');
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
