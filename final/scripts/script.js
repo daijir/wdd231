@@ -1,10 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const menuTabs = document.querySelectorAll('.menu-tab');
-    const menuContents = document.querySelectorAll('.menu-content');
-
     const hamburgerButton = document.querySelector('.hamburger-button');
     const mainNav = document.querySelector('.main-nav');
     const navLinks = document.querySelectorAll('nav a');
+
+    hamburgerButton.addEventListener('click', function() {
+        mainNav.classList.toggle('open');
+        hamburgerButton.classList.toggle('open');
+    });
+
+    
+    const menuTabs = document.querySelectorAll('.menu-tab');
+    const menuContents = document.querySelectorAll('.menu-content');
 
     menuTabs.forEach(tab => {
         tab.addEventListener('click', function() {
@@ -19,11 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 targetMenuContent.classList.add('active');
             }
         });
-    });
-
-    hamburgerButton.addEventListener('click', function() {
-        mainNav.classList.toggle('open');
-        hamburgerButton.classList.toggle('open');
     });
 
     navLinks.forEach(link => {
