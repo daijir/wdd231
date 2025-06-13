@@ -46,7 +46,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function fetchAndRenderAllMenu() {
         try {
-            const response = await fetch('https://daijir.github.io/wdd231/final/data/menu.json');
+            const response = await fetch('data/menu.json', {
+                cache: 'force-cache'
+            });
+
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
@@ -71,8 +74,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 card.classList.add('menu-card');
 
                 card.innerHTML = `
-                    <img src="${item.photo}" alt="${item.name} - Discover our delicious menu item">
-                    <div class="menu-card-content">
+                        <picture>
+                        <source type="image/webp" srcset="${item.photo.replace(/\.\w+$/, '.webp')}">
+                        <img
+                            src="${item.photo}"
+                            alt="${item.name}"
+                            width="300" height="200"
+                            loading="lazy"
+                        >
+                        </picture>
+                        <div class="menu-card-content">
                         <h3>${item.name}</h3>
                         <p>¥${item.price}</p>
                     </div>
