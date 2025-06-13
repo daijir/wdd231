@@ -8,7 +8,7 @@ body {
 }
 
 a {
-    color: #e44d26;  
+    color: #ca2800;  
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -57,18 +57,18 @@ h3 {
 }
 
 .button.primary {
-    background-color: #e44d26;
+    background-color: #ca2800;
     color: #fff;
 }
 
 .button.primary:hover {
     background-color: #fff;
-    color: #e44d26;
-    border-color: #e44d26;
+    color: #ca2800;
+    border-color: #ca2800;
 }
 
 header {
-    background-color: #e44d26;
+    background-color: #ca2800;
     padding: 1em;
     display: flex;
     flex-direction: row;
@@ -151,7 +151,7 @@ header .header-info h1 {
     top: 100%;
     right: 0;
     width: 100%;
-    background-color: #e44d26;
+    background-color: #ca2800;
     border-top: 1px solid #ffcc00;
     padding: 1em 0;
     box-sizing: border-box;
@@ -249,7 +249,7 @@ main {
     font-size: 2.2em;
     line-height: 1.3;
     margin-bottom: 0.5em;
-    color: #e44d26; 
+    color: #ca2800; 
 }
 
 .hero-content .catch-phrase {
@@ -305,7 +305,7 @@ main {
 
 .menu-tab.active {
     color: #222;
-    border-bottom-color: #e44d26;
+    border-bottom-color: #ca2800;
 }
 
 .menu-tab:hover {
@@ -385,7 +385,7 @@ main {
     margin-top: 0;
     margin-bottom: 0.5em;
     font-size: 1.2em;
-    color: #e44d26; 
+    color: #ca2800; 
 }
 
 .menu-item .price {
@@ -448,11 +448,12 @@ main {
 }
 
 footer {
-    background-color: #e44d26;
+    background-color: #ca2800;
     color: #fff;
     padding: 1.5em;
     text-align: center;
     border-top: 4px solid #ffcc00; 
+    height: 150px;
 }
 
 footer .footer-content {
@@ -522,7 +523,7 @@ footer .social-links img:hover {
 }
 
 .menu-card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.05);
 }
 
 .menu-card img {
@@ -593,7 +594,7 @@ dialog p {
 
 dialog .price {
     font-weight: bold;
-    color: #e44d26;
+    color: #ca2800;
     font-size: 1.3em;
 }
 
@@ -608,7 +609,7 @@ dialog button {
     display: block;
     margin-top: 25px;
     padding: 10px 20px;
-    background-color: #e44d26;
+    background-color: #ca2800;
     color: white;
     border: none;
     border-radius: 5px;
@@ -635,7 +636,7 @@ dialog button:hover {
 
 .reservation-form-section h2,
 .existing-reservations-section h2 {
-    color: #e44d26;
+    color: #ca2800;
     text-align: center;
     margin-bottom: 1.5em;
 }
@@ -666,7 +667,7 @@ dialog button:hover {
     display: block;
     width: 100%;
     padding: 1em;
-    background-color: #e44d26;
+    background-color: #ca2800;
     color: #fff;
     border: none;
     border-radius: 5px;

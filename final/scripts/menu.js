@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 card.classList.add('menu-card');
 
                 card.innerHTML = `
-                    <img src="${item.photo}" alt="${item.name}">
+                    <img src="${item.photo}" alt="${item.name} - Discover our delicious menu item">
                     <div class="menu-card-content">
                         <h3>${item.name}</h3>
                         <p>¥${item.price}</p>
