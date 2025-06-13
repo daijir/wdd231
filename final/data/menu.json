@@ -1,0 +1,210 @@
+[
+  {
+    "name": "Hand-pulled Soy Sauce Ramen",
+    "time": "dinner",
+    "category": "Noodles",
+    "price": 850,
+    "photo": "images/normal-soy-ramen.webp",
+    "description": "Our classic hand-pulled noodles in a rich, savory soy sauce broth, topped with tender chashu pork, seasoned soft-boiled egg, and fresh green onions.",
+    "allergens": ["wheat", "soy", "egg", "pork"]
+  },
+  {
+    "name": "Special Hand-pulled Soy Sauce Ramen",
+    "time": "dinner",
+    "category": "Noodles",
+    "price": 1200,
+    "photo": "images/special-soy-ramen.webp",
+    "description": "An elevated version of our classic ramen, featuring extra slices of premium chashu, a larger seasoned soft-boiled egg, and an assortment of fresh vegetables.",
+    "allergens": ["wheat", "soy", "egg", "pork"]
+  },
+  {
+    "name": "Soupless Mala Tantanmen",
+    "time": "dinner",
+    "category": "Noodles",
+    "price": 900,
+    "photo": "images/soupless-tantanmen.webp",
+    "description": "A spicy and numbing (mala) sensation with our soupless tantanmen. Thick noodles tossed in a rich sesame-chili sauce, topped with spicy ground pork, and bok choy.",
+    "allergens": ["wheat", "soy", "sesame", "pork"]
+  },
+  {
+    "name": "Taiwanese Mazesoba",
+    "time": "dinner",
+    "category": "Noodles",
+    "price": 900,
+    "photo": "images/taiwanese-mazesoba.webp",
+    "description": "A hearty and flavorful soupless ramen inspired by Taiwanese street food. Featuring thick noodles, spicy minced meat, a raw egg yolk, and various aromatic toppings.",
+    "allergens": ["wheat", "soy", "egg", "pork"]
+  },
+  {
+    "name": "Hearty Soupless Ramen",
+    "time": "dinner",
+    "category": "Noodles",
+    "price": 980,
+    "photo": "images/hearty-soupless-ramen.webp",
+    "description": "A robust and satisfying soupless ramen with a rich, savory sauce, topped with braised pork belly, pickled ginger, and a sprinkle of crispy garlic.",
+    "allergens": ["wheat", "soy", "pork"]
+  },
+  {
+    "name": "Char Siu",
+    "time": "dinner",
+    "category": "Toppings",
+    "price": 280,
+    "photo": "images/char-siu.webp",
+    "description": "Extra slices of our tender, slow-braised chashu pork, perfectly seasoned.",
+    "allergens": ["pork", "soy"]
+  },
+  {
+    "name": "Shredded Green Onion",
+    "time": "dinner",
+    "category": "Toppings",
+    "price": 150,
+    "photo": "images/green-onion.webp",
+    "description": "Freshly shredded green onions to add a crisp, aromatic bite to your dish.",
+    "allergens": []
+  },
+  {
+    "name": "Seasoned Soft-boiled Egg",
+    "time": "dinner",
+    "category": "Toppings",
+    "price": 150,
+    "photo": "images/eggs.webp",
+    "description": "A perfectly seasoned soft-boiled egg with a creamy yolk, ideal for adding richness.",
+    "allergens": ["egg"]
+  },
+  {
+    "name": "Menma (Bamboo Shoots)",
+    "time": "dinner",
+    "category": "Toppings",
+    "price": 100,
+    "photo": "images/menma.webp",
+    "description": "Crunchy fermented bamboo shoots, a classic ramen topping with a distinct savory flavor.",
+    "allergens": ["soy"]
+  },
+  {
+    "name": "Spinach",
+    "time": "dinner",
+    "category": "Toppings",
+    "price": 100,
+    "photo": "images/spinach.webp",
+    "description": "Blanched spinach, a healthy and refreshing addition to any ramen.",
+    "allergens": []
+  },
+  {
+    "name": "Addictive Cucumber",
+    "time": "dinner",
+    "category": "Appetizers",
+    "price": 280,
+    "photo": "images/cucumber.webp",
+    "description": "Crisp cucumber slices marinated in a spicy and tangy dressing, truly addictive!",
+    "allergens": ["soy", "sesame"]
+  },
+  {
+    "name": "Zha Cai (Preserved Vegetable)",
+    "time": "dinner",
+    "category": "Appetizers",
+    "price": 280,
+    "photo": "images/zha-cai.webp",
+    "description": "Spicy and savory preserved mustard stem, a popular Chinese appetizer with a unique crunch.",
+    "allergens": ["soy"]
+  },
+
+  {
+    "name": "Hand-pulled Soy Sauce Ramen",
+    "time": "lunch",
+    "category": "Ramen Set",
+    "price": 850,
+    "photo": "images/normal-soy-ramen.webp",
+    "description": "Our classic hand-pulled noodles in a rich, savory soy sauce broth, served as part of a set meal.",
+    "allergens": ["wheat", "soy", "egg", "pork"]
+  },
+  {
+    "name": "Special Soy Sauce Ramen",
+    "time": "lunch",
+    "category": "Ramen Set",
+    "price": 1200,
+    "photo": "images/special-soy-ramen.webp",
+    "description": "An elevated version of our classic ramen, featuring extra toppings and served as a lunch set.",
+    "allergens": ["wheat", "soy", "egg", "pork"]
+  },
+  {
+    "name": "Soupless Tantanmen",
+    "time": "lunch",
+    "category": "Ramen Set",
+    "price": 900,
+    "photo": "images/soupless-tantanmen.webp",
+    "description": "A spicy and numbing (mala) sensation with our soupless tantanmen, offered as a lunch set.",
+    "allergens": ["wheat", "soy", "sesame", "pork"]
+  },
+  {
+    "name": "Taiwanese Mazesoba",
+    "time": "lunch",
+    "category": "Ramen Set",
+    "price": 900,
+    "photo": "images/taiwanese-mazesoba.webp",
+    "description": "A hearty and flavorful soupless ramen inspired by Taiwanese street food, available for lunch.",
+    "allergens": ["wheat", "soy", "egg", "pork"]
+  },
+  {
+    "name": "Hearty Soupless Ramen",
+    "time": "lunch",
+    "category": "Ramen Set",
+    "price": 980,
+    "photo": "images/hearty-soupless-ramen.webp",
+    "description": "A robust and satisfying soupless ramen with a rich, savory sauce, offered as a lunch set.",
+    "allergens": ["wheat", "soy", "pork"]
+  },
+  {
+    "name": "Water Dumplings 3pcs",
+    "time": "lunch",
+    "category": "A La Carte Set",
+    "price": 150,
+    "photo": "images/water-dumplings.webp",
+    "description": "Three delicate pork and vegetable dumplings, boiled and served with a savory dipping sauce.",
+    "allergens": ["wheat", "pork", "soy"]
+  },
+  {
+    "name": "Fried Chicken 3pcs",
+    "time": "lunch",
+    "category": "A La Carte Set",
+    "price": 300,
+    "photo": "images/fried-chicken.webp",
+    "description": "Three pieces of crispy, juicy Japanese-style fried chicken (karaage).",
+    "allergens": ["wheat", "soy", "chicken"]
+  },
+  {
+    "name": "Today's Mini Rice Bowl",
+    "time": "lunch",
+    "category": "A La Carte Set",
+    "price": 300,
+    "photo": "images/mini-rice-bowl.webp",
+    "description": "A small, delicious rice bowl with a rotating daily topping. Please ask staff for today's special!",
+    "allergens": ["rice", "varies daily"]
+  },
+  {
+    "name": "Fried Chicken Lunch",
+    "time": "lunch",
+    "category": "Great Value Lunch (Free Large Rice)",
+    "price": 800,
+    "photo": "images/fried-chicken-set.webp",
+    "description": "A generous portion of our delicious fried chicken, served with a complimentary large serving of rice.",
+    "allergens": ["wheat", "soy", "chicken", "rice"]
+  },
+  {
+    "name": "Almond Tofu",
+    "time": "lunch",
+    "category": "Desserts",
+    "price": 300,
+    "photo": "images/almond-tofu.webp",
+    "description": "A light and refreshing traditional Chinese dessert with a smooth, jelly-like texture and a delicate almond flavor.",
+    "allergens": ["almond"]
+  },
+  {
+    "name": "Special Ice Cream",
+    "time": "lunch",
+    "category": "Desserts",
+    "price": 380,
+    "photo": "images/special-ice-cream.webp",
+    "description": "Our unique house-made ice cream with a delightful surprise flavor. Ask your server for today's special!",
+    "allergens": ["dairy", "egg", "varies daily"]
+  }
+]

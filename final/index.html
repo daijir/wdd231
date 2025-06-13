@@ -16,7 +16,7 @@
       <link rel="stylesheet" href="styles/normalize.css">
     </noscript>
     <link rel="stylesheet" href="styles/style.css">
-    <meta property="og:title" content="Yorii Town Chamber of Commerce - Business Directory">
+    <meta property="og:title" content="A homepage of Hamafuji">
     <meta property="og:description" content="A directory of member businesses of the Yorii Town Chamber of Commerce.">
     <meta property="og:image" content="https://s.yimg.jp/images/hometown/images/common/localgovernment/lglogo/11/11408.png">
     <meta property="og:url" content="https://daijir.github.io/wdd231/final/index.html">
@@ -26,15 +26,17 @@
 <body>
     <header>
         <div class="logo">
-            <img src="images/favicon.webp" alt="Hamafuji Logo" width="100">
+            <img src="images/favicon.webp" alt="Hamafuji Logo" loading="lazy">
+        </div>
+        <div class="header-info">
+            <h1>Hamafuji</h1>
         </div>
         <div class="nav-wrapper">
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#location">Store Information</a></li>
-                    <li><a href="#news">News</a></li>
-                    <li><a href="#reservation">Reservation</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
                 </ul>
             </nav>
             <button class="hamburger-button">
@@ -43,20 +45,17 @@
                 <span></span>
             </button>
         </div>
-        <div class="header-info">
-            <p class="phone">Phone: 0276-58-0412</p>
-        </div>
     </header>
 
     <main>
         <section class="hero">
-            <img src="images/hero-image.webp" alt="hero image">
+            <img src="images/hero-image.webp" alt="hero image" loading="lazy">
             <div class="hero-content">
                 <h1>Serving authentic Chinese cuisine with energy today!</h1>
                 <p class="catch-phrase">Please enjoy our signature ramen with special soup and homemade noodles, and addictive Taiwanese mazesoba.</p>
                 <div class="hero-buttons">
-                    <a href="#menu" class="button primary">View Menu</a>
-                    <a href="#location" class="button primary">Store Information</a>
+                    <a href="menu.html" class="button primary">Menu</a>
+                    <a href="reservation.html" class="button primary">Reservation</a>
                 </div>
             </div>
         </section>
@@ -94,11 +93,6 @@
                 <li>March 4, 2025 <a href="#">Morning Ramen Announcement</a></li>
             </ul>
         </section>
-
-        <section class="reservation-section" id="reservation">
-            <h2>Reservation</h2>
-            <p>Reservations can be made by phone (<a href="tel:0276580412">0276-58-0412</a>) or via this <a href="#">URL</a>.</p>
-        </section>
     </main>
 
     <footer>
@@ -110,13 +104,9 @@
                     <li>Terms of Service</li>
                 </ul>
             </nav>
-            <!-- <div class="social-links">
-                <a href="https://www.instagram.com/hama_fuji_/" target="_blank"><img src="images/instagram.jpg" alt="Instagram"></a>
-                <a href="https://x.com/hama_fuji_/" target="_blank"><img src="images/x.png" alt="X"></a>
-            </div> -->
         </div>
     </footer>
 
-    <script type="module" src="scripts/script.js"></script>
+    <script defer src="scripts/script.js"></script>
 </body>
 </html>

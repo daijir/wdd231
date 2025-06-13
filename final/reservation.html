@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamafuji</title>
+    <meta name="description" content="A reservation page of Hamafuji">
+    <meta name="author" content="Daijiro Sagane">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" onload="this.rel='stylesheet'">
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    </noscript>
+    <link rel="stylesheet" href="styles/normalize.css" media="print" onload="this.media='all'">
+    <noscript>
+      <link rel="stylesheet" href="styles/normalize.css">
+    </noscript>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta property="og:title" content="A reservation page of Hamafuji">
+    <meta property="og:description" content="A directory of member businesses of the Yorii Town Chamber of Commerce.">
+    <meta property="og:image" content="https://s.yimg.jp/images/hometown/images/common/localgovernment/lglogo/11/11408.png">
+    <meta property="og:url" content="https://daijir.github.io/wdd231/final/reservation.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/favicon.webp" alt="Hamafuji Logo">
+        </div>
+        <div class="header-info">
+            <h1>Hamafuji</h1>
+        </div>
+        <div class="nav-wrapper">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="reservation-form-section">
+            <h2>Reservation Form</h2>
+            <form id="reservationForm">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Number of Guests:</label>
+                    <input type="number" id="guests" min="1" max="10" value="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time:</label>
+                    <select id="time" required>
+                        <option value="">Select a time</option>
+                        </select>
+                </div>
+                <button type="submit" class="button primary">Make Reservation</button>
+                <p id="reservationMessage" style="color: red; margin-top: 1em;"></p>
+            </form>
+        </section>
+
+        <section class="existing-reservations-section">
+            <h2>Existing Reservations</h2>
+            <div id="existingReservationsList">
+                <p>No existing reservations to display.</p>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Hamafuji</p>
+            <nav>
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>Terms of Service</li>
+                </ul>
+            </nav>
+            <!-- <div class="social-links">
+                <a href="https://www.instagram.com/hama_fuji_/" target="_blank"><img src="images/instagram.jpg" alt="Instagram"></a>
+                <a href="https://x.com/hama_fuji_/" target="_blank"><img src="images/x.png" alt="X"></a>
+            </div> -->
+        </div>
+    </footer>
+
+    <script type="module" src="scripts/reservation.js"></script>
+</body>
+</html>
