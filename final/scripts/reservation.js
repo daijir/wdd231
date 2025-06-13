@@ -1,25 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const menuTabs = document.querySelectorAll('.menu-tab');
-    const menuContents = document.querySelectorAll('.menu-content');
-
     const hamburgerButton = document.querySelector('.hamburger-button');
     const mainNav = document.querySelector('.main-nav');
     const navLinks = document.querySelectorAll('nav a');
-
-    menuTabs.forEach(tab => {
-        tab.addEventListener('click', function() {
-            const tabId = this.dataset.tab;
-
-            menuTabs.forEach(t => t.classList.remove('active'));
-            this.classList.add('active');
-
-            menuContents.forEach(content => content.classList.remove('active'));
-            const targetMenuContent = document.getElementById(tabId + '-menu');
-            if (targetMenuContent) {
-                targetMenuContent.classList.add('active');
-            }
-        });
-    });
 
     hamburgerButton.addEventListener('click', function() {
         mainNav.classList.toggle('open');

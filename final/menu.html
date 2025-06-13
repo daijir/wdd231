@@ -34,6 +34,18 @@
   <meta property="og:description" content="Menu page of Hamafuji">
   <meta property="og:image" content="https://tabelog.com/restaurant/images/Rvw/211221/330e372046ab1b16095a66df98874186.jpg">
   <meta property="og:url" content="https://daijir.github.io/wdd231/final/menu.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Hamafuji",
+    "hasMenu": {
+      "@type": "Menu",
+      "name": "Hamafuji Menu"
+    }
+  }
+  </script>
+
 </head>
 
 <body>
@@ -65,12 +77,12 @@
     </main>
 
     <dialog id="menuDialog">
-        <img id="dialogPhoto" src="" alt="Menu Item">
+        <img id="dialogPhoto" src="" alt="Menu Item" width="300" height="300">
         <h2 id="dialogName"></h2>
         <p class="price" id="dialogPrice"></p>
         <p id="dialogDescription"></p>
         <p class="allergens" id="dialogAllergens"></p>
-        <button id="closeDialog">X</button>
+        <button id="closeDialog" aria-label="close menu detail">X</button>
     </dialog>
 
     <footer>

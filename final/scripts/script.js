@@ -42,10 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     async function fetchAndRenderMenu() {
         try {
-            const response = await fetch('data/menu.json', {
-                cache: 'force-cache'
-            });
-            
+            const response = await fetch('data/menu.json');
+
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }

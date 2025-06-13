@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url(...);
+  font-weight: 400;
+  font-display: swap;
+}
 
 body {
     font-family: 'Noto Sans JP', sans-serif;

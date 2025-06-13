@@ -1,25 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const menuTabs = document.querySelectorAll('.menu-tab');
-    const menuContents = document.querySelectorAll('.menu-content');
-
     const hamburgerButton = document.querySelector('.hamburger-button');
     const mainNav = document.querySelector('.main-nav');
     const navLinks = document.querySelectorAll('nav a');
-
-    menuTabs.forEach(tab => {
-        tab.addEventListener('click', function() {
-            const tabId = this.dataset.tab;
-
-            menuTabs.forEach(t => t.classList.remove('active'));
-            this.classList.add('active');
-
-            menuContents.forEach(content => content.classList.remove('active'));
-            const targetMenuContent = document.getElementById(tabId + '-menu');
-            if (targetMenuContent) {
-                targetMenuContent.classList.add('active');
-            }
-        });
-    });
 
     hamburgerButton.addEventListener('click', function() {
         mainNav.classList.toggle('open');
@@ -46,9 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function fetchAndRenderAllMenu() {
         try {
-            const response = await fetch('data/menu.json', {
-                cache: 'force-cache'
-            });
+            const response = await fetch('data/menu.json');
 
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
@@ -69,6 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 allMenuContainer.innerHTML = '';
             }
 
+            const fragment = document.createDocumentFragment();
+
             uniqueMenu.forEach(item => {
                 const card = document.createElement('div');
                 card.classList.add('menu-card');
@@ -79,12 +61,11 @@ document.addEventListener('DOMContentLoaded', () => {
                         <img
                             src="${item.photo}"
                             alt="${item.name}"
-                            width="300" height="200"
-                            loading="lazy"
+                            width="400" height="400"
                         >
                         </picture>
                         <div class="menu-card-content">
-                        <h3>${item.name}</h3>
+                        <h2>${item.name}</h2>
                         <p>¥${item.price}</p>
                     </div>
                 `;
@@ -105,8 +86,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     menuDialog.showModal();
                 });
 
-                allMenuContainer.appendChild(card);
+                fragment.appendChild(card);
             });
+
+            allMenuContainer.appendChild(fragment);
 
         } catch (error) {
             console.error('Error fetching or rendering all menu data:', error);
