@@ -92,7 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
             allMenuContainer.appendChild(fragment);
 
         } catch (error) {
-            console.error('Error fetching or rendering all menu data:', error);
             if (allMenuContainer) {
                 allMenuContainer.innerHTML = '<p style="color: red; text-align: center; padding: 20px;">Failed to load menu. Please try again later.</p>';
             }

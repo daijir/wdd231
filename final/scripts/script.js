@@ -50,7 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             fetchedMenuData = await response.json();
-            console.log('Menu data loaded:', fetchedMenuData);
 
             if (dinnerMenuContainer) dinnerMenuContainer.innerHTML = '';
             if (lunchMenuContainer) lunchMenuContainer.innerHTML = '';
@@ -76,7 +75,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
         } catch (error) {
-            console.error('Error fetching or parsing menu data:', error);
             const menuDisplayArea = document.querySelector('.menu-sections') || document.body;
             if (menuDisplayArea) {
                 menuDisplayArea.innerHTML = '<p style="color: red; text-align: center; padding: 20px;">Failed to load menu. Please try again later.</p>';
