@@ -70,11 +70,8 @@ h3 {
     border-color: #ca2800;
 }
 
-/* Consolidated section styles */
-.section-card,
-.menu-section,
-.location-section,
-.news-section {
+/* Reusable card style for all main content sections */
+.section-card {
     background-color: #fff;
     padding: 1.5em;
     margin-bottom: 1.5em;
@@ -411,10 +408,8 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.location-section .map {
-    width: 100%;
-    height: auto;
-}
+/* These specific classes were consolidated into .section-card */
+/* .location-section .map etc. can be simplified if HTML is updated */
 
 .location-details {
     padding-top: 1em;
@@ -560,7 +555,7 @@ dialog {
     width: 90%;
     background-color: #fff;
     position: fixed;
-    top: 50%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000;
@@ -604,21 +599,14 @@ dialog .allergens {
     margin-top: 15px;
 }
 
-/* ADVICE: Add class="button primary" to your dialog button in HTML */
-/* and remove the specific styles below. This is an example override. */
-dialog button {
+dialog .button {
     display: block;
     margin: 25px auto 0;
-    padding: 10px 20px;
-    font-size: 1em;
-    /* The .button.primary class will handle the rest */
 }
 
 /* --- Reservation Forms --- */
 
-/* Consolidated reservation form/list styles */
-.reservation-form-section,
-.existing-reservations-section {
+.content-card {
     background-color: #fff;
     padding: 2em;
     margin: 2em auto;
@@ -627,9 +615,7 @@ dialog button {
     max-width: 600px;
 }
 
-/* Consolidated h2 styles within reservation sections */
-.reservation-form-section h2,
-.existing-reservations-section h2 {
+.content-card h2 {
     color: #ca2800;
     text-align: center;
     margin-bottom: 1.5em;
@@ -657,7 +643,7 @@ dialog button {
     font-size: 1em;
 }
 
-.reservation-form-section .button.primary {
+.content-card .button.primary {
     display: block;
     width: 100%;
     padding: 1em;
@@ -667,9 +653,9 @@ dialog button {
     text-align: center;
 }
 
-.reservation-form-section .button.primary:hover {
-    background-color: #d13c1c; /* Keep hover effect specific if it differs */
-    color: #fff; /* Ensure color stays white on this specific hover */
+.content-card .button.primary:hover {
+    background-color: #d13c1c;
+    color: #fff;
     border-color: transparent;
 }
 
