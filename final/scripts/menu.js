@@ -62,6 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             src="${item.photo}"
                             alt="${item.name}"
                             width="400" height="400"
+                            load="lazy"
                         >
                         </picture>
                         <div class="menu-card-content">
